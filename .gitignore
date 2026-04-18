@@ -1,9 +1,16 @@
 .DS_Store
 node_modules/
+coverage/
 dist/
+build/
 target/
 src-tauri/target/
 src-tauri/gen/
+apps/**/dist/
+apps/**/node_modules/
+apps/**/.turbo/
+apps/**/src-tauri/target/
+.pnpm-store/
 *.log
 *.tmp
 *.swp

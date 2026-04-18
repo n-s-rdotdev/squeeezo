@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Squeeezo",
+  "version": "0.1.0",
+  "identifier": "com.squeeezo.desktop",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Squeeezo",
+        "width": 1040,
+        "height": 760,
+        "minWidth": 1040,
+        "minHeight": 760,
+        "maxWidth": 1040,
+        "maxHeight": 760,
+        "resizable": false,
+        "maximizable": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": false,
+    "targets": "all"
+  }
+}
