@@ -1,0 +1,14 @@
+[package]
+name = "squeeezo-desktop"
+version.workspace = true
+edition.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2.5.2", features = [] }
+
+[dependencies]
+compression-core = { path = "../../../crates/compression-core" }
+serde.workspace = true
+serde_json.workspace = true
+tauri = { version = "2.9.2", features = [] }
+tauri-plugin-dialog = "2.4.2"

@@ -1,0 +1,32 @@
+name: SqueeezoActionExtension
+options:
+  minimumXcodeGenVersion: 2.45.0
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    SWIFT_VERSION: "6.0"
+targets:
+  SqueeezoActionExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: ActionExtension
+    entitlements:
+      path: ActionExtension/ActionExtension.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.squeeezo.action-extension
+        PRODUCT_NAME: SqueeezoActionExtension
+        INFOPLIST_FILE: ActionExtension/Info.plist
+        CODE_SIGN_STYLE: Automatic
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 0.1.0
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: NO
+schemes:
+  SqueeezoActionExtension:
+    build:
+      targets:
+        SqueeezoActionExtension: all
